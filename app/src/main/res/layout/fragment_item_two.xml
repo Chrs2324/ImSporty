@@ -71,4 +71,272 @@
         android:text="NOT A VALID NUMBER!"
         android:visibility="invisible" />
 
+    <TableLayout
+        android:id="@+id/lowWeightTable2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="#" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Exercise" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Reps or Time" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Running" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="20 Minutes" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Crunches and other Abdominal Exercise" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="20 - 30 min" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Pull Ups" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="25 - 30 Reps" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/medWeightTable2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="#" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Exercise" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Reps or time" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Bench Press" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="25 - 30 reps" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Pull Ups" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="25 - 30 Reps" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Bicep Curls" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="25 - 30 reps" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/largeWeightTable2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="#" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Exercise" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Time or reps" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Treadmill Run" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="45 Minutes - 1 hour" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Bench Press" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="35 - 40 Reps" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Abdominal Exercise" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="45 Minutes - 1 Hour" />
+        </TableRow>
+
+    </TableLayout>
+
+
 </RelativeLayout>

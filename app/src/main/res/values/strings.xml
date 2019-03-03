@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_workout">workout</string>
     <string name="title_activity_nutrition">nutrition</string>
-
+    <string name="google_maps_key">AIzaSyDmZ5esiAhh53sDervbVmiq7AUJtVFN0IE </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_gym_navigator">Map</string>

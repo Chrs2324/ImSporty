@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                         Fragment selectedFragment = null;
                         switch (item.getItemId()) {
                             case R.id.action_item1:
-                                selectedFragment = item_one.newInstance();
+                                selectedFragment = new item_one();
                                 break;
                             case R.id.action_item2:
                                 selectedFragment = item_two.newInstance();
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Manually displaying the first fragment - one time only
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, item_one.newInstance());
+        transaction.replace(R.id.frame_layout, new item_one());
         transaction.commit();
 
         //Used to select an item programmatically

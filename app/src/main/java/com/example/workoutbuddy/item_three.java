@@ -29,9 +29,9 @@ public class item_three extends Fragment {
     String height;
     String weight;
     TextView warning;
-    double numHeight;
-    double numWeight;
     TableLayout table;
+    TableLayout table2;
+    TableLayout table3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +42,8 @@ public class item_three extends Fragment {
         text2 = view.findViewById(R.id.editText4);
         warning = view.findViewById(R.id.textView4);
         table = view.findViewById(R.id.lowWeightTable);
+        table2 = view.findViewById(R.id.medWeightTable);
+        table3 = view.findViewById(R.id.largeWeightTable);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -53,19 +55,29 @@ public class item_three extends Fragment {
                         try
                         {
                             height = text.getText().toString();
-                            weight = text.getText().toString();
-                            numHeight = Integer.parseInt(height);
-                            numWeight = Integer.parseInt(weight);
+                            weight = text2.getText().toString();
+                            int numHeight = Integer.parseInt(height);
+                            int numWeight = Integer.parseInt(weight);
                             if (numHeight != 0)
                             {
                                 warning.setVisibility(View.INVISIBLE);
                                 if (numWeight >= 0 && numWeight <= 100)
                                 {
-                                        table.setVisibility(View.VISIBLE);
+                                    table.setVisibility(View.VISIBLE);
+                                    table2.setVisibility(View.INVISIBLE);
+                                    table3.setVisibility(View.INVISIBLE);
                                 }
-                                else
+                                if (numWeight >= 101 && numWeight <= 200)
                                 {
                                     table.setVisibility(View.INVISIBLE);
+                                    table2.setVisibility(View.VISIBLE);
+                                    table3.setVisibility(View.INVISIBLE);
+                                }
+                                if (numWeight >= 201 && numWeight <= 999)
+                                {
+                                    table.setVisibility(View.INVISIBLE);
+                                    table2.setVisibility(View.INVISIBLE);
+                                    table3.setVisibility(View.VISIBLE);
                                 }
                                 //Intent intent = new Intent(getActivity(), ExcersizeResult.class);
                                 //startActivity(intent);

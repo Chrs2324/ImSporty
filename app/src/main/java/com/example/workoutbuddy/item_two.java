@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+import android.widget.TableLayout;
 
 public class item_two extends Fragment {
     public static item_two newInstance() {
@@ -27,7 +28,10 @@ public class item_two extends Fragment {
     EditText text2;
     String height;
     String weight;
-    TextView warning;
+    TextView warning2;
+    TableLayout table1_1;
+    TableLayout table1_2;
+    TableLayout table1_3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +40,10 @@ public class item_two extends Fragment {
         Button button = (Button)view.findViewById(R.id.button2);
         text = view.findViewById(R.id.editText);
         text2 = view.findViewById(R.id.editText2);
-        warning = view.findViewById(R.id.textView3);
+        table1_1 = view.findViewById(R.id.lowWeightTable2);
+        table1_2 = view.findViewById(R.id.medWeightTable2);
+        table1_3 = view.findViewById(R.id.largeWeightTable2);
+        warning2 = view.findViewById(R.id.textView3);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -48,21 +55,38 @@ public class item_two extends Fragment {
                         try
                         {
                             height = text.getText().toString();
-                            weight = text.getText().toString();
-                            double numHeight = Double.parseDouble(height);
-                            double numWeight = Double.parseDouble(weight);
+                            weight = text2.getText().toString();
+                            int numHeight = Integer.parseInt(height);
+                            int numWeight = Integer.parseInt(weight);
                             if (numHeight != 0)
                             {
-                                warning.setVisibility(View.INVISIBLE);
-                                Intent intent = new Intent(getActivity(), ExcersizeResult.class);
-                                startActivity(intent);
+                                warning2.setVisibility(View.INVISIBLE);
+                                if (numWeight >= 0 && numWeight <= 100)
+                                {
+                                    table1_1.setVisibility(View.VISIBLE);
+                                    table1_2.setVisibility(View.INVISIBLE);
+                                    table1_3.setVisibility(View.INVISIBLE);
+                                }
+                                if (numWeight >= 101 && numWeight <= 200)
+                                {
+                                    table1_1.setVisibility(View.INVISIBLE);
+                                    table1_2.setVisibility(View.VISIBLE);
+                                    table1_3.setVisibility(View.INVISIBLE);
+                                }
+                                if (numWeight >= 201 && numWeight <= 999)
+                                {
+                                    table1_1.setVisibility(View.INVISIBLE);
+                                    table1_2.setVisibility(View.INVISIBLE);
+                                    table1_3.setVisibility(View.VISIBLE);
+                                }
+                                //Intent intent = new Intent(getActivity(), ExcersizeResult.class);
+                                //startActivity(intent);
                             }
                         }catch (NumberFormatException e)
                         {
-                            warning.setVisibility(View.VISIBLE);
+                            warning2.setVisibility(View.VISIBLE);
                             //checks to see if a valid double was entered
                         }
-                        break;
                 }
             }
         });

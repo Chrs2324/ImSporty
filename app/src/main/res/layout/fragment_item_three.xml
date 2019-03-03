@@ -74,10 +74,13 @@
         android:id="@+id/lowWeightTable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:stretchColumns="1"
         android:visibility="invisible">
 
-        <TableRow android:layout_marginTop="400dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
 
             <TextView
                 android:layout_column="1"
@@ -88,7 +91,248 @@
                 android:layout_column="1"
                 android:layout_marginLeft="50dp"
                 android:text="Type of Food" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Calories" />
+
         </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Burger" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="354 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Stir Fry" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="159 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Taco Salad" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="279 Calories" />
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/medWeightTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="#" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Type of Food" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Calories" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Grilled Chicked" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="215 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Tomato Soup" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="74 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Caesar Salad" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="94 Calories" />
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/largeWeightTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="#" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Type of Food" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="100dp"
+                android:text="Calories" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Fruit Salad" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="124 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Celery" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="16 Calories" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_column="1"
+                android:text="3" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="50dp"
+                android:text="Carrots" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginLeft="100dp"
+                android:text="25 Calories" />
+        </TableRow>
+
     </TableLayout>
 
 </RelativeLayout>
